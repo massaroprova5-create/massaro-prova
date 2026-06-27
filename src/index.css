@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: light;
+  background-color: #f8fafc;
+}
+
+html.dark body {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+html.dark [class*="dark:bg-slate-950"] {
+  background-color: #f8fafc !important;
+}
+
+html.dark [class*="dark:bg-slate-900"] {
+  background-color: #f1f5f9 !important;
+}
+
+html.dark [class*="dark:bg-slate-800"] {
+  background-color: #e2e8f0 !important;
+}
+
+html.dark [class*="dark:bg-slate-700"] {
+  background-color: #cbd5e1 !important;
+}
+
+html.dark [class*="dark:text-white"],
+html.dark [class*="dark:text-slate-100"],
+html.dark [class*="dark:text-slate-200"],
+html.dark [class*="dark:text-slate-300"] {
+  color: #0f172a !important;
+}
+
+html.dark [class*="dark:text-slate-400"],
+html.dark [class*="dark:text-slate-500"],
+html.dark [class*="dark:text-slate-600"] {
+  color: #475569 !important;
+}
+
+html.dark [class*="dark:border-slate-800"],
+html.dark [class*="dark:border-slate-700"],
+html.dark [class*="dark:border-slate-900"] {
+  border-color: #e2e8f0 !important;
+}
+
+html.dark [class*="dark:hover:bg-slate-800"],
+html.dark [class*="dark:hover:bg-slate-900"] {
+  background-color: #f1f5f9 !important;
+}
